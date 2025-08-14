@@ -257,7 +257,7 @@ class App(ctk.CTk):
     def importImage(self):
         dialog = ctk.filedialog.askopenfilename(
             title="Select an image",
-            filetypes=[("Image files", "*.png;*.jpg;*.jpeg;")]
+            filetypes=[("Image files", "*.png *.jpg *.jpeg ")]
         )
         if dialog:
             self.ImageString = dialog
@@ -269,7 +269,7 @@ class App(ctk.CTk):
     def importWatermark(self):
         dialog = ctk.filedialog.askopenfilename(
             title="Select a watermark image",
-            filetypes=[("Image files", "*.png;*.jpg;*.jpeg;")]
+            filetypes=[("Image files", "*.png *.jpg *.jpeg ")]
         )
         if dialog:
             self.WatermarkString = dialog
@@ -348,7 +348,7 @@ class App(ctk.CTk):
             return
         dialog = ctk.filedialog.asksaveasfilename(
             title="Save image",
-            filetypes=[("Image files", "*.png;*.jpg;*.jpeg;")],
+            filetypes=[("Image files", "*.png *.jpg *.jpeg ")],
             defaultextension=".png"
         )
         if dialog:
