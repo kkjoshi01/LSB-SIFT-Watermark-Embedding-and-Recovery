@@ -1,0 +1,4 @@
+numpy >=2.1.1
+opencv-python >= 4.11.0.86
+customtkinter >= 5.2.2
+pillow >= 11.1.0
